@@ -1,0 +1,19 @@
+app:
+  name: app
+  version: v0.1
+  timezone: Asia/Jakarta
+  env: local
+
+database:
+  type: sql
+  sql: 
+    driver: mysql
+    dsn: username:password@/dbname?parseTime=true
+    maxIdleConn: 10
+    connMaxLifetime: 1
+    maxOpenConn: 100
+
+http:
+  enable: true
+  port: 9011
+  gracefullTimeout: 10s

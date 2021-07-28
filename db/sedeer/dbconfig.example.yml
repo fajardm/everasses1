@@ -1,0 +1,11 @@
+development:
+    dialect: mysql
+    datasource: username:password@/dbname?parseTime=true
+    dir: dev-mysql
+    table: seeders
+
+production:
+    dialect: mysql
+    datasource: username:password@/dbname?parseTime=true
+    dir: prod-mysql
+    table: seeders
